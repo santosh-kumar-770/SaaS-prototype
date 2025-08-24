@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | SaaSify</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto 0 auto;
+            background: linear-gradient(120deg, rgba(100,255,218,0.07) 0%, rgba(23,42,69,0.85) 100%);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px 0 rgba(100, 255, 218, 0.08);
+            padding: 40px 32px 32px 32px;
+            color: #ccd6f6;
+            animation: fadeIn 1.2s;
+        }
+        .login-container h2 {
+            color: #64ffda;
+            text-align: center;
+            margin-bottom: 24px;
+            text-shadow: 0 2px 12px #64ffda33;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .login-form input {
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 1.5px solid #233554;
+            background: #112240;
+            color: #ccd6f6;
+            font-size: 1rem;
+            transition: border 0.2s, box-shadow 0.2s;
+        }
+        .login-form input:focus {
+            border-color: #64ffda;
+            outline: none;
+            box-shadow: 0 0 0 2px #64ffda44;
+        }
+        .login-form button {
+            margin-top: 10px;
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 18px;
+            color: #bfc9e0;
+        }
+        .signup-link a {
+            color: #64ffda;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        .signup-link a:hover {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>here goes login</h1>
+    <div class="login-container">
+        <h2>Sign In to Your Account</h2>
+        <form class="login-form" autocomplete="off">
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <button class="cta-btn" type="submit">Log In</button>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="signup.html">Sign up</a>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,3 +1,125 @@
+/* Responsive Design */
+@media (max-width: 1024px) {
+    nav {
+        padding: 24px 30px;
+    }
+    .features {
+        gap: 24px;
+        padding: 18px 0;
+    }
+    .about-section, .contact-section {
+        padding: 32px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 10px;
+    }
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+    .hero {
+        min-height: 60vh;
+        padding: 30px 10px 10px 10px;
+        border-radius: 0 0 30px 30px;
+    }
+    .hero-title {
+        font-size: 2.1rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        border-radius: 20px;
+    }
+    .feature-card {
+        width: 90%;
+        min-width: 0;
+        padding: 20px 10px;
+    }
+    .about-section, .contact-section {
+        max-width: 98vw;
+        margin: 40px auto 0 auto;
+        padding: 24px 8px;
+        border-radius: 12px;
+    }
+    .signup-container, .login-container {
+        max-width: 95vw;
+        margin: 40px auto 0 auto;
+        padding: 24px 8px 18px 8px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 2vw;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+    nav ul {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    .hero {
+        min-height: 45vh;
+        padding: 18px 2vw 8px 2vw;
+        border-radius: 0 0 12px 12px;
+    }
+    .hero-title {
+        font-size: 1.2rem;
+    }
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    .cta-btn {
+        font-size: 1rem;
+        padding: 12px 18px;
+        border-radius: 18px;
+    }
+    .features {
+        gap: 10px;
+        padding: 8px 0;
+        border-radius: 8px;
+    }
+    .feature-card {
+        width: 98vw;
+        padding: 12px 4px;
+        font-size: 0.98rem;
+        border-radius: 8px;
+    }
+    .about-section, .contact-section {
+        max-width: 99vw;
+        margin: 20px auto 0 auto;
+        padding: 10px 2vw;
+        border-radius: 8px;
+        font-size: 0.98rem;
+    }
+    .signup-container, .login-container {
+        max-width: 99vw;
+        margin: 20px auto 0 auto;
+        padding: 10px 2vw 8px 2vw;
+        border-radius: 8px;
+        font-size: 0.98rem;
+    }
+    .signup-form input, .login-form input {
+        font-size: 0.98rem;
+        padding: 10px 8px;
+    }
+}
 /* General Body and HTML */
 html {
     scroll-behavior: smooth;
@@ -121,6 +243,7 @@ nav li a:hover, nav li a:focus {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    /* height: 100vh; */
     margin: 60px 0 0;
     animation: fadeIn 1.5s 0.5s both;
     background: linear-gradient(90deg, rgba(100,255,218,0.03) 0%, rgba(10,25,47,0.7) 100%);
