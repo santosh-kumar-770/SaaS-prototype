@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Host Events | UNIVOICE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>host events</h1>
+    <nav>
+        <div class="logo">UNIVOICE</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="main-heading">Host Your Events</h1>
+    <div class="host-container">
+        <form class="host-form" id="hostEventForm" autocomplete="off">
+            <h1 class="form-section-title">Event Details</h1>
+            <div class="form-group">
+                <label for="eventName">Event Name</label>
+                <input type="text" id="eventName" class="form-input" placeholder="e.g. Tech Conference 2025" required>
+            </div>
+            <div class="form-group">
+                <label for="eventType">Event Type</label>
+                <input type="text" id="eventType" class="form-input" placeholder="e.g. Seminar, Workshop, Meetup" required>
+            </div>
+            <div class="form-group">
+                <label for="eventTheme">Event Theme</label>
+                <input type="text" id="eventTheme" class="form-input" placeholder="e.g. AI & Innovation" required>
+            </div>
+            <div class="form-group">
+                <label for="eventImage">Event Image/Poster</label>
+                <input type="file" id="eventImage" class="form-input" accept="image/*">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="eventDate">Date</label>
+                    <input type="date" id="eventDate" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventTime">Time</label>
+                    <input type="time" id="eventTime" class="form-input" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="venue">Venue</label>
+                <input type="text" id="venue" class="form-input" placeholder="e.g. Main Auditorium" required>
+            </div>
+            <div class="form-group">
+                <label for="audience">Target Audience</label>
+                <input type="text" id="audience" class="form-input" placeholder="e.g. Students, Professionals" required>
+            </div>
+            <div class="form-group">
+                <label for="capacity">Capacity</label>
+                <input type="number" id="capacity" class="form-input" placeholder="e.g. 200" min="1" required>
+            </div>
+
+            <h1 class="form-section-title">Organizer Details</h1>
+            <div class="form-group">
+                <label for="organizerName">Organizer Name</label>
+                <input type="text" id="organizerName" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="organizerEmail">Email</label>
+                <input type="email" id="organizerEmail" class="form-input" placeholder="e.g. johndoe@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="organizerContact">Contact Number</label>
+                <input type="tel" id="organizerContact" class="form-input" placeholder="e.g. +1234567890" required>
+            </div>
+
+            <h1 class="form-section-title">Registration Details</h1>
+            <div class="form-group">
+                <label for="registrationProcess">Registration Process</label>
+                <input type="text" id="registrationProcess" class="form-input" placeholder="e.g. Online, On-spot" required>
+            </div>
+            <div class="form-group">
+                <label>Certifications</label>
+                <div class="radio-group">
+                    <input type="radio" id="certYes" name="certification" value="yes" required>
+                    <label for="certYes">Yes</label>
+                    <input type="radio" id="certNo" name="certification" value="no">
+                    <label for="certNo">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="additionalDetails">Additional Details</label>
+                <textarea id="additionalDetails" class="form-input" rows="4" placeholder="Describe your event, special requirements, or any other important information..." style="resize:vertical;"></textarea>
+            </div>
+            <button class="cta-btn" type="submit">Register Event</button>
+        </form>
+    </div>
 </body>
+
 </html>
