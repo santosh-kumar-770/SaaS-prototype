@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const el = document.getElementById('animated-words');
     if (!el) return;
-    const words = ['Fast.', 'Secure.', 'Scalable.', 'Beautiful.'];
+    const words = ['Effortless.', 'Memorable.', 'Seamless.', 'Limitless.'];
     let i = 0, j = 0, isDeleting = false;
     function type() {
         let word = words[i];
